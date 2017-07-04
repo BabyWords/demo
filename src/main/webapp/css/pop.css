@@ -1,0 +1,89 @@
+.pop-icon {
+    display: block;
+    float: right;
+    width: 12px;
+    height: 11px;
+    margin-right: 20px;
+}
+
+.pop-icon-narrow {
+    height: 2px;
+    margin-top: 19px;
+
+}
+
+.pop-icon-zoom {
+
+    margin-top: 15px;
+}
+
+.pop-icon-close {
+
+    margin-top: 15px;
+}
+
+.pop-tab-tt {
+    background-color: #e7f6ff;
+    line-height: 30px;
+    min-height: 30px;
+    color: #09689e;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.pop-tab-text {
+    min-height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+.lh24 {
+    line-height: 24px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+.pop-tab-xs1 {
+    float: left;
+    width: 7%;
+}
+
+.pop-tab-xs2 {
+    float: left;
+    width: 54%;
+    *width: 53.66%;
+}
+
+.pop-tab-xs3 {
+    float: left;
+    width: 32%;
+}
+
+.pop-tab-xs4 {
+    float: left;
+    width: 93%;
+}
+
+@media (max-width: 979px) {
+    .pop-tab-xs1 {
+        width: 30%;
+    }
+
+    .per100,
+    .pop-tab-xs4 {
+        width: 100%;
+    }
+
+    .pop-tab-xs2,
+    .pop-tab-xs3 {
+        width: 70%;
+    }
+}
+

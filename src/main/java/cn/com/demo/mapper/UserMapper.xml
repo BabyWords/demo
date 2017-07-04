@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.demo.dao.UserDao" >
+    <resultMap type="cn.com.demo.entity.User" id="User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="policenumber" property="policenumber"/>
+        <result column="phonenumber" property="phonenumber"/>
+        <result column="deptname" property="deptname"/>
+
+    </resultMap>
+    <insert id="adduser" parameterType="cn.com.demo.entity.User">
+        insert into userinfo (id,username,policenumber,phonenumber,deptname,type)
+        values (#{id},#{username},#{policenumber},#{phonenumber},#{deptname},#{type})
+    </insert>
+    <select id="userexsist" parameterType="java.lang.String" resultType="int">
+        select count(*) from userinfo where policenumber=#{policenumber}
+    </select>
+    <select id="getuser" parameterType="java.lang.String" resultType="cn.com.demo.entity.User">
+        select * from userinfo where policenumber=#{policenumber}
+    </select>
+    <select id="getphonenumber" parameterType="java.lang.String" resultType="java.lang.String">
+        select phonenumber from userinfo where id=#{userid}
+    </select>
+
+
+
+
+</mapper>
